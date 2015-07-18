@@ -7,3 +7,6 @@
 [submodule "lib/go-mode"]
 	path = lib/go-mode
 	url = https://github.com/dominikh/go-mode.el
+[submodule "lib/emacs-fish"]
+	path = lib/emacs-fish
+	url = https://github.com/wwwjfy/emacs-fish
