@@ -14,28 +14,24 @@
 ;; Get hostname
 (setq hostname (replace-regexp-in-string "\\(^[[:space:]\n]*\\|[[:space:]\n]*$\\)" "" (with-output-to-string (call-process "hostname" nil standard-output))))
 
-;; dockerfile-mode
-(add-to-list 'load-path "~/.emacs.d/lib/dockerfile-mode")
-(require 'dockerfile-mode)
-(add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode))
-    
-;; markdown-mode
-(add-to-list 'load-path "~/.emacs.d/lib/markdown-mode")
-(autoload 'markdown-mode "markdown-mode"
-  "Major mode for editing Markdown files" t)
-(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
-(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
-;; linum-plus
-(add-to-list 'load-path "~/.emacs.d/lib/linum-plus")
-(require 'linum+)	 
+;; Add lib paths
+(setq dotfiles-lib-dir "~/.emacs.d/lib/")
+
+(dolist (path (list "dockerfile-mode"
+		    "markdown-mode"
+		    "linum-plus"
+		    "go-mode"
+		    "emacs-fish"))
+  (add-to-list 'load-path (concat dotfiles-lib-dir path)))
+
+;; Require libs
+(dolist (lib (list 'dockerfile-mode
+		   'linum+
+		   'go-mode
+		   'markdown-mode
+		   'fish-mode))
+  (require lib))
+
 (global-linum-mode 1)
-
-;; go-mode
-(add-to-list 'load-path "~/.emacs.d/lib/go-mode")
-(require 'go-mode)
-
-;; emacs-fish
-(add-to-list 'load-path "~/.emacs.d/lib/emacs-fish")
-(require 'fish-mode)
 
