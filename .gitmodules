@@ -1,0 +1,3 @@
+[submodule "lib/linum-plus"]
+	path = lib/linum-plus
+	url = https://github.com/emacsmirror/linum-plus
