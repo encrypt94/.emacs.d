@@ -1,3 +1,6 @@
 [submodule "lib/linum-plus"]
 	path = lib/linum-plus
 	url = https://github.com/emacsmirror/linum-plus
+[submodule "lib/markdown-mode"]
+	path = lib/markdown-mode
+	url = https://github.com/emacsmirror/markdown-mode
