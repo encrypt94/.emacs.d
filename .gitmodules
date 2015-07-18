@@ -10,3 +10,6 @@
 [submodule "lib/emacs-fish"]
 	path = lib/emacs-fish
 	url = https://github.com/wwwjfy/emacs-fish
+[submodule "lib/dockerfile-mode"]
+	path = lib/dockerfile-mode
+	url = https://github.com/spotify/dockerfile-mode
