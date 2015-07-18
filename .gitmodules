@@ -4,3 +4,6 @@
 [submodule "lib/markdown-mode"]
 	path = lib/markdown-mode
 	url = https://github.com/emacsmirror/markdown-mode
+[submodule "lib/go-mode"]
+	path = lib/go-mode
+	url = https://github.com/dominikh/go-mode.el
