@@ -22,7 +22,8 @@
 		    "markdown-mode"
 		    "linum-plus"
 		    "go-mode"
-		    "emacs-fish"))
+		    "emacs-fish"
+		    "yaml-mode"))
   (add-to-list 'load-path (concat dotfiles-lib-dir path)))
 
 ;; Require libs
@@ -30,7 +31,8 @@
 		   'linum+
 		   'go-mode
 		   'markdown-mode
-		   'fish-mode))
+		   'fish-mode
+		   'yaml-mode))
   (require lib))
 
 (global-linum-mode 1)
