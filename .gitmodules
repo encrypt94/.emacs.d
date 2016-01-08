@@ -16,3 +16,6 @@
 [submodule "lib/yaml-mode"]
 	path = lib/yaml-mode
 	url = https://github.com/yoshiki/yaml-mode
+[submodule "lib/focus"]
+	path = lib/focus
+	url = https://github.com/larstvei/Focus

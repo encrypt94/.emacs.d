@@ -12,7 +12,7 @@ What's inside
   * [linum-plus](https://github.com/emacsmirror/linum-plus)
   * [markdown-mode](https://github.com/emacsmirror/markdown-mode)
   * [yaml-mode](https://github.com/yoshiki/yaml-mode)
-
+  * [focus-mode](https://github.com/larstvei/Focus)
 
 Update
 ------
